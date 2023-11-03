@@ -1,28 +1,64 @@
 body {
-    background-color: black;
-    color: aliceblue;
-}
-header{
-
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-.navbar {
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    padding: 0;
+    width: 200px; /* Adjust as needed */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-main{
-    display: flex;
-}
-section {
-    display: flex;
-    align-items: center;
-}
-h1{
-    font-family: Arial, Helvetica, sans-serif;
+
+nav li {
+    margin: 0.5rem 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-  }
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    padding: 8rem;
+}
+
+#home {
+    animation: bounceText 0.5s ease 3s;
+}
+
+h1, h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+}
+
+@keyframes bounceText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
