@@ -14,8 +14,28 @@ header {
     justify-content: center;
     left: 0;
     top: 0;
-    width: 200px; /* Adjust as needed */
+    width: 20%; /* Adjust as needed */
     z-index: 1; /* Ensure the navigation is above the content */
+}
+
+.circle {
+    width: 60%; /* Adjust the size as needed */
+    height: 60%; /* Adjust the size as needed */
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #333; /* You can remove this border if not needed */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the circular container */
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
 }
 
 nav ul {
@@ -38,12 +58,12 @@ nav a {
 .main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 }
 
 .section {
     padding: 8rem;
-    margin-left: 200px; /* Add margin to the left to accommodate the navigation */
+    margin-left: 20%; /* Add margin to the left to accommodate the navigation */
 }
 
 .text-primary {
