@@ -26,6 +26,10 @@ header {
     border: 3px solid #333; /* You can remove this border if not needed */
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -35,7 +39,8 @@ img {
 nav {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center; 
+     
 }
 
 nav ul {
@@ -48,6 +53,7 @@ nav ul {
 
 nav li {
     margin: 0.5rem 0;
+    text-transform: uppercase;
 }
 
 nav a {
@@ -68,11 +74,9 @@ nav a {
 .section {
     padding: 8rem;
     margin-left: 20%; /* Add margin to the left to accommodate the navigation */
+    margin-top: 5%;
 }
 
-.change-color {
-    color: #cf7004 !important;
-}
 
 .subheading {
     text-transform: uppercase;
